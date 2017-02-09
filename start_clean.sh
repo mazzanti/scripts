@@ -1,0 +1,1 @@
+sudo bleachbit -c --preset
