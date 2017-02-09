@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\txtfile\shell\mymenu]
+@="My Menu Entry"
+
+[HKEY_CLASSES_ROOT\txtfile\shell\mymenu\command]
+@="%SystemRoot%\\system32\\NOTEPAD.EXE %1"
+
+[HKEY_CURRENT_USER\Software\Classes\directory\shell\rarbackup]
+@="Create RAR Backup"
+
+[HKEY_CURRENT_USER\Software\Classes\directory\shell\rarbackup\command]
+@="%SystemRoot%\\system32\\NOTEPAD.EXE %1"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\rarbackup]
+@="Create RAR Backup"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\rarbackup\command]
+@="%SystemRoot%\\system32\\NOTEPAD.EXE %1"
+
+[HKEY_CLASSES_ROOT\Directory\shell\rarbackup]
+@="Rar With Pass"
+
+[HKEY_CLASSES_ROOT\Directory\shell\rarbackup\command]
+@="\"C:\\rar\\rar.exe\" a -hptest -m0 -ep1 -r -v350000 -y \"%1\" \"%1\\*.*\""

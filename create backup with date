@@ -1,0 +1,8 @@
+#!/bin/sh
+# script to archive file or folder with datetime
+# Giulio Mazzanti - mazzantibox@gmail.com
+now=$(date +"%Y%m%d_%H%M%S")
+
+for F in $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS; do
+    tar -zcvf $1_$now.tar.gz $F
+done
