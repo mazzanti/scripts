@@ -1,7 +1,7 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\shell\RarMe]
-@="Backup Rar With Pass"
+@="Backup RAR With Pass"
 
 [HKEY_CLASSES_ROOT\Directory\shell\RarMe\command]
-@="\"C:\\Program Files (x86)\\WinRAR\\rar.exe\" a -hptest -m0 -ep1 -agyyyyMMddHHii -r -v350000 -y \"%1\" \"%1\\*.*\""
+@="\"C:\\Program Files (x86)\\WinRAR\\rar.exe\" a -hptest -m0 -ep1 -ag_yyyyMMddHHiiss -r -v350000 -y \"%1\" \"%1\\*.*\""
